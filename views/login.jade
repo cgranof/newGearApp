@@ -1,0 +1,18 @@
+extends layout
+
+block content
+	if error
+		h3= error
+
+	h1 Existing Users
+	form(action="/auth/login", method="post")
+		input(type="text", name="username", placeholder="Username")
+		input(type="password", name="password", placeholder="Password")
+		input(type="submit")
+
+	h1 Register
+	form(action="/auth/signup", method="post")
+		input(type="text", name="username", placeholder="Username")
+		input(type="email", name="email", placeholder="Email")
+		input(type="password", name="password", placeholder="Password")
+		input(type="submit")

@@ -15,7 +15,7 @@ $(document).on('ready', function(){
     }
     google.maps.event.addDomListener(window, 'load', initialize);
 
-    $.get('/mapshome/seed', function(gear){
+    $.get('/gear', function(gear){
         console.log(gear);
     })
 

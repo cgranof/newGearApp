@@ -1,6 +1,6 @@
 var mongoose = require('mongoose');
 
-var gearSchema = mongoose.Schema({
+var tripsSchema = mongoose.Schema({
 	location: String,
 	activity: String,
 	season: String,
@@ -9,4 +9,4 @@ var gearSchema = mongoose.Schema({
 	safety: [String]
 });
 
-module.exports = mongoose.model('Gear', gearSchema);
+module.exports = mongoose.model('Trip', tripSchema);

@@ -1,5 +1,27 @@
 extends layout
 
 block content
+	.container
+		
 
-	h1 Welcome to my page
+		button.btn.btn-primary#loginButton(type='button', data-toggle='modal', data-target='.bs-example-modal-lg') Log in
+			.modal.fade.bs-example-modal-lg(tabindex='-1', role='dialog', aria-labelledby='myLargeModalLabel', aria-hidden='true')
+				.modal-dialog.modal-lg
+					.modal-content
+						.modal-header 
+						.modal-body
+							h1 Existing Users
+							form(action="/auth/login", method="post")
+								input(type="text", name="username", placeholder="Username")
+								input(type="password", name="password", placeholder="Password")
+								input(type="submit")
+
+							h1 Register
+							form(action="/auth/signup", method="post")
+								input(type="text", name="username", placeholder="Username")
+								input(type="email", name="email", placeholder="Email")
+								input(type="password", name="password", placeholder="Password")
+								input(type="submit")
+		
+		.page-header
+			h1 Welcome to my page

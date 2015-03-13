@@ -1,0 +1,19 @@
+
+[{
+	"location": "Alaska",
+	"activity": "backpacking",
+	"season": "summer",
+	"clothing": "[]",
+	"campgear": "[]",
+	"safety": "[]",
+	"latLong": "[63.3333, 150.5]"
+	},
+	{
+	"location": "Moab",
+	"activity": "kayaking",
+	"season": "summer",
+	"clothing": "[]",
+	"campgear": "[]",
+	"safety": "[]",
+	"latLong": "[38.5725, 109.5497]"
+}]
