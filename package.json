@@ -1,5 +1,6 @@
 {
   "dependencies": {
+<<<<<<< HEAD
     "express": "^4",
     "jade": "^1",
     "body-parser": "^1",
@@ -10,5 +11,11 @@
     "bcrypt": "~0.8.1",
     "cookie-parser": "~1.3.4",
     "connect-flash": "~0.1.1"
+=======
+    "body-parser": "^1",
+    "express": "^4",
+    "jade": "^1",
+    "mongoose": "^3.8.24"
+>>>>>>> 5d71718b84b5283af5138de8cebfc58bfcc2ae67
   }
 }
