@@ -11,6 +11,7 @@ var passportConfig = require('./config/passport');
 var indexController = require('./controllers/index.js');
 var tripsController = require('./controllers/trips.js');
 var authenticationController = require('./controllers/authentication');
+var userController = require('./controllers/user.js');
 
 var mongoose = require('mongoose');
 mongoose.connect('mongodb://localhost/gears');
@@ -54,6 +55,7 @@ app.get('/auth/logout', authenticationController.logout);
 
 app.use(passportConfig.ensureAuthenticated);
 app.get('/profile', indexController.profile);
+app.post('/update', userController.updateGear);
 
 var server = app.listen(6450, function() {
 	console.log('Express server listening on port ' + server.address().port);

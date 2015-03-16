@@ -2,30 +2,32 @@ extends layout
 
 block content
 	.container
-		
+		.top-container
+			a(href='/profile') log in
+			//- button.btn.btn-primary#loginButton(type='button', data-toggle='modal', data-target='.bs-example-modal-lg') Log in
+				//- .modal.fade.bs-example-modal-lg(tabindex='-1', role='dialog', aria-labelledby='myLargeModalLabel', aria-hidden='true')
+				//- 	.modal-dialog.modal-lg
+				//- 		.modal-content
+				//- 			.modal-header 
+				//- 			.modal-body
+				//- 				h1 Existing Users
+				//- 				form(action="/auth/login", method="post")
+				//- 					input(type="text", name="username", placeholder="Username")
+				//- 					input(type="password", name="password", placeholder="Password")
+				//- 					input(type="submit")
 
-		button.btn.btn-primary#loginButton(type='button', data-toggle='modal', data-target='.bs-example-modal-lg') Log in
-			//- .modal.fade.bs-example-modal-lg(tabindex='-1', role='dialog', aria-labelledby='myLargeModalLabel', aria-hidden='true')
-			//- 	.modal-dialog.modal-lg
-			//- 		.modal-content
-			//- 			.modal-header 
-			//- 			.modal-body
-			//- 				h1 Existing Users
-			//- 				form(action="/auth/login", method="post")
-			//- 					input(type="text", name="username", placeholder="Username")
-			//- 					input(type="password", name="password", placeholder="Password")
-			//- 					input(type="submit")
-
-			//- 				h1 Register
-			//- 				form(action="/auth/signup", method="post")
-			//- 					input(type="text", name="username", placeholder="Username")
-			//- 					input(type="email", name="email", placeholder="Email")
-			//- 					input(type="password", name="password", placeholder="Password")
-			//- 					input(type="submit")
+				//- 				h1 Register
+				//- 				form(action="/auth/signup", method="post")
+				//- 					input(type="text", name="username", placeholder="Username")
+				//- 					input(type="email", name="email", placeholder="Email")
+				//- 					input(type="password", name="password", placeholder="Password")
+				//- 					input(type="submit")
 		
-		.page-header
-			h1 Welcome to my page
-		nav#navbar.navbar.navbar-default.navbar-fixed-to-top.navbar-inverse
+		
+		.header
+			h1 Never forget an important 
+			h1 piece of gear again.
+		nav#navbar.navbar.navbar-default.navbar-fixed-to-top
 			.container-nav
 				.navbar-header
 				form.form-inline
@@ -35,4 +37,14 @@ block content
 							a(href='/') Home
 						li
 							a(href='/mapshome') Trips
-						
+		.row
+			.col-md-4 
+				span.glyphicon.glyphicon-plane(aria-hidden='true')
+			.col-md-4 
+				span.glyphicon.glyphicon-share-alt(aria-hidden='true')
+			.col-md-4 
+				span.glyphicon.glyphicon-tent(aria-hidden='true')
+		.row
+			.col-md-4 Popular trips, view them all
+			.col-md-4 Share a packing list. 
+			.col-md-4 Get gear recommendations.
