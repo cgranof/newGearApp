@@ -15,14 +15,11 @@
 	
 // };
 // 
-var trips = require('../models/gearModel.json');
+var gearModel = require('../models/gearModel.json');
 
 var tripsController = {
-	list: function(req, res) { 
-		var tripId = req.params.trip_id;
-		Trip.findById(tripID, function(err, result) {
-		});
-		
+	list: function(req, res) {
+		res.send(gearModel)
 	}
 };
 

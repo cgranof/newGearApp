@@ -42,7 +42,9 @@ app.use(bodyParser.urlencoded({extended: false}));
 app.get('/', indexController.index);
 
 app.get('/mapshome', indexController.mapshome);
-app.get('/gear', tripsController.list);
+app.get('/trips', indexController.trips);
+
+app.get('/triplist', tripsController.list);
 
 app.get('/auth/login', authenticationController.login);
 app.post('/auth/login', authenticationController.processLogin);
@@ -51,6 +53,7 @@ app.get('/auth/logout', authenticationController.logout);
 
 
 app.use(passportConfig.ensureAuthenticated);
+app.get('/profile', indexController.profile);
 
 var server = app.listen(6450, function() {
 	console.log('Express server listening on port ' + server.address().port);

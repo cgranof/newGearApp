@@ -4,8 +4,26 @@ block header-content
 		html, body, #map-canvas { height: 100%; margin: 0; padding: 0;}
 
 block content
+	nav#navbar.navbar.navbar-default.navbar-fixed-to-top.navbar-inverse
+		.container-nav
+			.navbar-header
+			form.form-inline
+			#bs-example-navbar-collapse-1.collapse.navbar-collapse
+				ul.nav.navbar-nav
+					li
+						a(href='/') Home
+					li.active
+						a(href='/mapshome') Trips
 	#map-canvas(style='width: 100%; height: 100%')
 	h1 Hello Boulder!
 	script(type='text/javascript', src='//maps.googleapis.com/maps/api/js?key=AIzaSyBc6jFP9HkL3AY5thcxAFEmrDIVZuj02Xc')
 	|     
+	h1 Trips
+	
+	p: .dropdown
+		#dLabel(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false') Trips
+			span.caret
+		ul.dropdown-menu(role='menu', aria-labelledby='dLabel')
+	ul#trips-list
 	script(type='text/javascript', src='/javascripts/map.js')
+

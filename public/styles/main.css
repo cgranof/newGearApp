@@ -6,3 +6,18 @@
 	float: right;
 	margin-top: 10px;
 }
+
+#smalltext {
+	font-size: 11px;
+}
+
+#map-canvas {
+	max-height: 400px;
+	max-width: 600px;
+	float: right;
+	margin-right: 20px;
+}
+
+#checkbox {
+	font-size: 11px;
+}

@@ -1,6 +1,6 @@
 $(document).on('ready', function(){
     function initialize() {
-        var myLatlng = new google.maps.LatLng(-25.363882,131.044922)
+        var myLatlng = new google.maps.LatLng(63.3333,-150.5000)
         var mapOptions = {
             //center: { lat: -34.397, lng: 150.644},
             zoom: 8,
