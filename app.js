@@ -14,7 +14,7 @@ var authenticationController = require('./controllers/authentication');
 var userController = require('./controllers/user.js');
 
 var mongoose = require('mongoose');
-mongoose.connect('process.env.MONGOLAB_URI || mongodb://localhost/gears');
+mongoose.connect('process.env.MONGOLAB_URI' || 'mongodb://localhost/gears');
 
 // var seedData = require('./models/seeds/gearSeeds.js');
 // seedData.find();
