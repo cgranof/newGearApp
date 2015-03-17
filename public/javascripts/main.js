@@ -28,21 +28,25 @@ $(function () {
           return $(this).val();
         }).get(); 
         
-
-        // $.post('/update', {clothing: clothingList}, function(dataFromServer){
         $.post('/update', {clothingList: clothingList}, function(dataFromServer){
 
-        }, "json");
+        }) ;
         console.log(clothingList);
         
         var campList = $("#campList input:checkbox:checked").map(function(){
           return $(this).val();
         }).get(); 
+         $.post('/update', {campList: campList}, function(dataFromServer){
+
+        }) ;
 
         var safetyList = $("#safetyList input:checkbox:checked").map(function(){
           return $(this).val();
         }).get(); 
-      // var gearList = clothingList + campList + safetyList;
+         $.post('/update', {safetyList: safetyList}, function(dataFromServer){
+
+        }) ;
+      
       
 
       // console.log(clothingList); 

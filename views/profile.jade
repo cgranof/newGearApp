@@ -1,95 +1,108 @@
 extends layout
 
 block content
-	h4 Welcome, #{user.username}!
-	button.btn.btn-primary#gearButton(type='button', data-toggle='modal', data-target='#myModal') Add Your Gear
-	.modal.fade.bs-example-modal-lg#myModal(tabindex='-1', role='dialog', aria-labelledby='myLargeModalLabel', aria-hidden='true')
-				.modal-dialog.modal-lg
-					.modal-content
-						.modal-header 
-							h3 Select the gear you currently own
-						.modal-body
-							h6 Clothing
-								.checkbox#clothingList
-									label
-										input.gearCheck(type='checkbox',value='base layer')
-										|	base layer
-									label
-										input.gearCheck(type='checkbox',value='mid-layer layer')
-										|	mid-layer layer
-									label
-										input.gearCheck(type='checkbox',value='jacket')
-										|	jacket
-									label
-										input(type='checkbox',value='wool socks')
-										|	wool socks
-									label
-										input.gearCheck(type='checkbox',value='waterproof jacket')
-										|	waterproof jacket
-									label
-										input.gearCheck(type='checkbox',value='rain pants')
-										|	rain pants
-									label
-										input.gearCheck(type='checkbox',value='wool hat')
-										|	wool hat
-									label
-										input(type='checkbox',value='sunglasses')
-										|	sunglasses
-							h6 Camp Gear
-								.checkbox#campList
-									label
-										input.gearCheck(type='checkbox',value='tent')
-										|	tent
-									label
-										input.gearCheck(type='checkbox',value='sleeping bag')
-										|	sleeping bag
-									label
-										input.gearCheck(type='checkbox',value='sleeping pad')
-										|	sleeping pad
-									label
-										input.gearCheck(type='checkbox',value='backpack')
-										|	backpack
-									label
-										input.gearCheck(type='checkbox',value='stove')
-										|	stove
-									label
-										input.gearCheck(type='checkbox',value='utensils')
-										|	utensils
-									label
-										input.gearCheck(type='checkbox',value='bowl')
-										|	bowl
-									label
-										input.gearCheck(type='checkbox',value='water bottle')
-										|	water bottle
-							h6 Safety Gear
-								.checkbox#safetyList
-									label
-										input.gearCheck(type='checkbox',value='first aid kit')
-										|	first aid kit
-									label
-										input.gearCheck(type='checkbox',value='gps')
-										|	gps
-									label
-										input.gearCheck(type='checkbox',value='water purification')
-										|	water purification
-									label
-										input.gearCheck(type='checkbox',value='map')
-										|	map
-									label
-										input.gearCheck(type='checkbox',value='multi-tool')
-										|	multi-tool
-									label
-										input.gearCheck(type='checkbox',value='sunscreen')
-										|	sunscreen
-									label
-										input.gearCheck(type='checkbox',value='bug head net')
-										|	bug head net
-									label
-										input.gearCheck(type='checkbox',value='bear spray')
-										|	bear spray
-						button.btn.btn-default(type='button', data-dismiss='modal') Close
-						button.btn.btn-primary#gearSave(type='button') Save gear list				
-	
+	.main-container
+		.top-container
+			a(href='/profile') log in
+		nav#navbar.navbar.navbar-default.navbar-fixed-to-top
+			.container-nav
+				.navbar-header
+				form.form-inline
+				#bs-example-navbar-collapse-1.collapse.navbar-collapse
+					ul.nav.navbar-nav
+						li
+							a(href='/') Home
+						li
+							a(href='/mapshome') Trips	
+		h4 Welcome, #{user.username}!
+		button.btn.btn-primary#gearButton(type='button', data-toggle='modal', data-target='#myModal') Add Your Gear
+		.modal.fade.bs-example-modal-lg#myModal(tabindex='-1', role='dialog', aria-labelledby='myLargeModalLabel', aria-hidden='true')
+					.modal-dialog.modal-lg
+						.modal-content
+							.modal-header 
+								h3 Select the gear you currently own
+							.modal-body
+								h6 Clothing
+									.checkbox#clothingList
+										label
+											input.gearCheck(type='checkbox',value='base layer')
+											|	base layer
+										label
+											input.gearCheck(type='checkbox',value='mid layer')
+											|	mid-layer layer
+										label
+											input.gearCheck(type='checkbox',value='jacket')
+											|	jacket
+										label
+											input(type='checkbox',value='wool socks')
+											|	wool socks
+										label
+											input.gearCheck(type='checkbox',value='waterproof jacket')
+											|	waterproof jacket
+										label
+											input.gearCheck(type='checkbox',value='rain pants')
+											|	rain pants
+										label
+											input.gearCheck(type='checkbox',value='wool hat')
+											|	wool hat
+										label
+											input(type='checkbox',value='sunglasses')
+											|	sunglasses
+								h6 Camp Gear
+									.checkbox#campList
+										label
+											input.gearCheck(type='checkbox',value='tent')
+											|	tent
+										label
+											input.gearCheck(type='checkbox',value='sleeping bag')
+											|	sleeping bag
+										label
+											input.gearCheck(type='checkbox',value='sleeping pad')
+											|	sleeping pad
+										label
+											input.gearCheck(type='checkbox',value='backpack')
+											|	backpack
+										label
+											input.gearCheck(type='checkbox',value='stove')
+											|	stove
+										label
+											input.gearCheck(type='checkbox',value='utensils')
+											|	utensils
+										label
+											input.gearCheck(type='checkbox',value='bowl')
+											|	bowl
+										label
+											input.gearCheck(type='checkbox',value='water bottle')
+											|	water bottle
+								h6 Safety Gear
+									.checkbox#safetyList
+										label
+											input.gearCheck(type='checkbox',value='first aid kit')
+											|	first aid kit
+										label
+											input.gearCheck(type='checkbox',value='gps')
+											|	gps
+										label
+											input.gearCheck(type='checkbox',value='water purification')
+											|	water purification
+										label
+											input.gearCheck(type='checkbox',value='map')
+											|	map
+										label
+											input.gearCheck(type='checkbox',value='multi-tool')
+											|	multi-tool
+										label
+											input.gearCheck(type='checkbox',value='sunscreen')
+											|	sunscreen
+										label
+											input.gearCheck(type='checkbox',value='bug head net')
+											|	bug head net
+										label
+											input.gearCheck(type='checkbox',value='bear spray')
+											|	bear spray
+							button.btn.btn-default(type='button', data-dismiss='modal') Close
+							button.btn.btn-primary#gearSave(type='button') Save gear list				
+		
 
 
 

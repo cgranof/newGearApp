@@ -15,6 +15,15 @@ var userSchema = mongoose.Schema({
   password: {
     type: String,
     required: true
+  },
+  clothing: {
+    type: [String]
+  },
+  camp: {
+    type: [String]
+  },
+  safety: {
+    type: [String]
   }
 });
 

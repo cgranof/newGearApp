@@ -1,0 +1,17 @@
+extends layout
+
+block content
+	.main-container
+		.top-container
+			a(href='/profile') log in
+		nav#navbar.navbar.navbar-default.navbar-fixed-to-top
+			.container-nav
+				.navbar-header
+				form.form-inline
+				#bs-example-navbar-collapse-1.collapse.navbar-collapse
+					ul.nav.navbar-nav
+						li
+							a(href='/') Home
+						li
+							a(href='/mapshome') Trips
+		//- h4 Welcome, #{trip.location}!

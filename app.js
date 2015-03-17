@@ -38,12 +38,13 @@ app.use(passport.session());
 
 
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({extended: false}));
+app.use(bodyParser.urlencoded({extended: true}));
 
 app.get('/', indexController.index);
 
 app.get('/mapshome', indexController.mapshome);
 app.get('/trips', indexController.trips);
+app.get('/destination', indexController.destination);
 
 app.get('/triplist', tripsController.list);
 

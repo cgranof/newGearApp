@@ -3,17 +3,17 @@
 	"location": "Alaska",
 	"activity": "backpacking",
 	"season": "summer",
-	"clothing": "[]",
-	"campgear": "[]",
-	"safety": "[]",
-	"latLong": "[63.3333, 150.5]"
+	"clothing": ["base layer", "mid layer", "jacket", "wool socks", "waterproof jacket", "rain pants", "wool hat", "sunglasses" ],
+	"campgear": [],
+	"safety": [],
+	"latLong": [63.3333, 150.5]
 	},
 	{
 	"location": "Moab",
 	"activity": "kayaking",
 	"season": "summer",
-	"clothing": "[]",
-	"campgear": "[]",
-	"safety": "[]",
-	"latLong": "[38.5725, 109.5497]"
+	"clothing": [],
+	"campgear": [],
+	"safety": [],
+	"latLong": [38.5725, 109.5497]
 }]

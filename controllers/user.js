@@ -1,10 +1,10 @@
 var userController = {
 	updateGear: function(req, res){
-		var gear = req.body.clothingList;
-		console.log(gear);
-		// gear.find(user, function(err, result){
-		// 	gear.save();
-		// });	
+		req.user.clothing.push(req.body);
+		req.user.camp.push(req.body);
+		req.user.safety.push(req.body);
+		req.user.save();
+			
 	}
 };
 

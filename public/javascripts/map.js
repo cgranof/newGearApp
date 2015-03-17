@@ -15,8 +15,8 @@ $(document).on('ready', function(){
       '<h1 id="firstHeading" class="firstHeading">Denali National Park</h1>'+
       '<div id="bodyContent">'+
       '<p><b>Denali</b>, is a backpackers dream' +
-      '<p>View the packing list: <a href="">'+
-      'placeholder</a> '+
+      '<p>View the packing list: <a href="/destination">'+
+      'Denali packing list</a> '+
       '<p>More info on the park: <a href="http://www.nps.gov/dena/index.htm">'+
       'http://www.nps.gov/dena/index.htm</a> '+
       '</div>'+

@@ -12,8 +12,6 @@
 }
 
 #map-canvas {
-	max-height: 400px;
-	max-width: 600px;
 	float: right;
 	margin-right: 10px;
 }
@@ -51,4 +49,16 @@
 .main-container {
 	max-width: 1140px;
 	margin: auto;
+}
+
+.image-container {
+	background-image: url("/images/hike.jpg");
+	background-repeat: no-repeat;
+	height: 600px;
+	padding-top: 10px;
+}
+
+.login-container {
+	padding-left: 40px;
+	padding-bottom: 20px;
 }
