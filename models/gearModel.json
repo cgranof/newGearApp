@@ -4,7 +4,7 @@
 	"activity": "backpacking",
 	"season": "summer",
 	"clothing": ["base layer", "mid layer", "jacket", "wool socks", "waterproof jacket", "rain pants", "wool hat", "sunglasses" ],
-	"campgear": [],
+	"campgear": ["tent", "sleeping bag"],
 	"safety": [],
 	"latLong": [63.3333, 150.5]
 	},

@@ -30,9 +30,8 @@ $(document).on('ready', function(){
             map: map
             
              });
-        google.maps.event.addListener(marker, 'click', function() {
+        google.maps.event.addListener(marker, 'mouseover', function() {
             infowindow.open(map,marker);
-                console.log('click');
         });
            
     }

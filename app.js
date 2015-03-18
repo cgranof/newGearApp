@@ -47,6 +47,8 @@ app.get('/trips', indexController.trips);
 app.get('/destination', indexController.destination);
 
 app.get('/triplist', tripsController.list);
+app.get('/gearlist', userController.list);
+app.get('/compare', userController.compare);
 
 app.get('/auth/login', authenticationController.login);
 app.post('/auth/login', authenticationController.processLogin);
