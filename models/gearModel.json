@@ -10,10 +10,22 @@
 	},
 	{
 	"location": "Moab",
-	"activity": "kayaking",
+	"activity": "Kayaking",
 	"season": "summer",
 	"clothing": [],
 	"campgear": [],
 	"safety": [],
 	"latLong": [38.5725, 109.5497]
+	},
+	{
+	"location": "Iceland",
+	"activity": "Trekking"
+	},
+	{
+	"location": "Belize",
+	"activity": "Sea kayaking"
+	},
+	{
+	"location": "Colorado",
+	"activity": "Rafting"
 }]

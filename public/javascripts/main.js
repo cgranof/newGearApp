@@ -13,9 +13,12 @@ var renderDestination = function(trips) {
   // for (var i = 0; i < trips.length; i++) {
     $('#destination-list').append('<li>' +
       trips[0].location +
-      '<br />' + trips[0].activity +
-      '<br />' + trips[0].clothing +
+      '<li>' + trips[0].activity + '</li>'+
+      '<li>' + trips[0].clothing + '</li>'+
+      '<li>' + trips[0].campgear + '</li>'+
+      '<li>' + trips[0].safety +
       '</li>');
+    console.log(trips[0].clothing);
   // }
 };
 
