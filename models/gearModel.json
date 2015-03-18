@@ -1,11 +1,11 @@
 
 [{
-	"location": "Alaska",
-	"activity": "backpacking",
+	"location": "Denali National Park",
+	"activity": "Backpacking",
 	"season": "summer",
 	"clothing": ["base layer", "mid layer", "jacket", "wool socks", "waterproof jacket", "rain pants", "wool hat", "sunglasses" ],
-	"campgear": ["tent", "sleeping bag"],
-	"safety": [],
+	"campgear": ["tent", "sleeping bag", "sleeping pad", "backpack", "stove", "utensils", "bowl", "water bottle"],
+	"safety": ["first aid kit", "gps", "water purification", "map", "multi-tool", "sunscreen", "bug head net", "bear spray"],
 	"latLong": [63.3333, 150.5]
 	},
 	{

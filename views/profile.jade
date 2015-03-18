@@ -102,9 +102,102 @@ block content
 											|	bear spray
 							button.btn.btn-default(type='button', data-dismiss='modal') Close
 							button.btn.btn-primary#gearSave(type='button') Save gear list				
-		p: button#get-gear View your gear
+		button.btn.btn-primary#get-gear(type='button') View your gear
 		ul#gear-list
-		script(type='text/javascript', src='/javascripts/profile.js')
+		//- script(type='text/javascript', src='/javascripts/profile.js')
+		button.btn.btn-primary#compare-gear(type='button') View what you're missing
+		ul#saved-tripslist
+
+		button.btn.btn-primary#createPackingList(type='button', data-toggle='modal', data-target='#myPackingModal') Create Packing List
+		.modal.fade.bs-example-modal-lg#myPackingModal(tabindex='-1', role='dialog', aria-labelledby='myLargeModalLabel', aria-hidden='true')
+					.modal-dialog.modal-lg
+						.modal-content
+							.modal-header 
+								input(type='text', name='name', placeholder='Name your trip...')
+								input(type='date', name='date', placeholder='Date of trip...')
+								input(type='text', name='participants', placeholder='Participants...')
+								h3 Select the gear to add to your packing list
+							.modal-body
+								h6 Clothing
+									.checkbox#newClothingList
+										label
+											input(type='checkbox',value='base layer')
+											|	base layer
+										label
+											input(type='checkbox',value='mid layer')
+											|	mid-layer layer
+										label
+											input(type='checkbox',value='jacket')
+											|	jacket
+										label
+											input(type='checkbox',value='wool socks')
+											|	wool socks
+										label
+											input(type='checkbox',value='waterproof jacket')
+											|	waterproof jacket
+										label
+											input(type='checkbox',value='rain pants')
+											|	rain pants
+										label
+											input(type='checkbox',value='wool hat')
+											|	wool hat
+										label
+											input(type='checkbox',value='sunglasses')
+											|	sunglasses
+								h6 Camp Gear
+									.checkbox#newCampList
+										label
+											input(type='checkbox',value='tent')
+											|	tent
+										label
+											input(type='checkbox',value='sleeping bag')
+											|	sleeping bag
+										label
+											input(type='checkbox',value='sleeping pad')
+											|	sleeping pad
+										label
+											input(type='checkbox',value='backpack')
+											|	backpack
+										label
+											input(type='checkbox',value='stove')
+											|	stove
+										label
+											input(type='checkbox',value='utensils')
+											|	utensils
+										label
+											input(type='checkbox',value='bowl')
+											|	bowl
+										label
+											input(type='checkbox',value='water bottle')
+											|	water bottle
+								h6 Safety Gear
+									.checkbox#newSafetyList
+										label
+											input(type='checkbox',value='first aid kit')
+											|	first aid kit
+										label
+											input(type='checkbox',value='gps')
+											|	gps
+										label
+											input(type='checkbox',value='water purification')
+											|	water purification
+										label
+											input(type='checkbox',value='map')
+											|	map
+										label
+											input(type='checkbox',value='multi-tool')
+											|	multi-tool
+										label
+											input(type='checkbox',value='sunscreen')
+											|	sunscreen
+										label
+											input(type='checkbox',value='bug head net')
+											|	bug head net
+										label
+											input(type='checkbox',value='bear spray')
+											|	bear spray
+							button.btn.btn-default(type='button', data-dismiss='modal') Close
+							button.btn.btn-primary#gearSave(type='button') Save gear list
 
 
 

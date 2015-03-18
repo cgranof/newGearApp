@@ -27,15 +27,39 @@ var userController = {
 	list: function(req, res) {
 		res.send(req.user);
 	},
+	// compare: function(req, res) {
+	// 	var alaska = gearModel[0].clothing;
+	// 	// console.log('alaska ; ' , alaska);
+	// 	var myClothing = req.user.clothing;
+	// 	// console.log('clothing:  ' , req.user.clothing);
+	// 	// var compare = _.difference([1, 2, 3, 4], [2, 5, 7]); => 1, 3, 4
+	// 	var compare = _.difference(alaska, myClothing);
+	// 	console.log('test ', compare);
+	// 	res.send(compare);
+
 	compare: function(req, res) {
-		var alaska = gearModel[0].clothing;
+		var alaskaClothing = gearModel[0].clothing;
 		// console.log('alaska ; ' , alaska);
 		var myClothing = req.user.clothing;
-		// console.log('clothing:  ' , req.user.clothing);
-		// var compare = _.difference([1, 2, 3, 4], [2, 5, 7]); => 1, 3, 4
-		var compare = _.difference(alaska, myClothing);
-		console.log('test ', compare);
-		res.send(compare);
+		var compareClothing = _.difference(alaskaClothing, myClothing);
+		// console.log('test ', compare);
+		
+		var alaskaCamp = gearModel[0].campgear;
+		var myCamp = req.user.camp;
+		var compareCamp = _.difference(alaskaCamp, myCamp);
+
+		var alaskaSafety = gearModel[0].safety;
+		var mySafety = req.user.safety;
+		var compareSafety = _.difference(alaskaSafety, mySafety);
+		var results = {};
+		results.compareClothing = compareClothing;
+		results.compareCamp = compareCamp;
+		results.compareSafety = compareSafety;
+		console.log(results);
+		
+		// results.push(alaskaClothing, compareCamp, compareSafety);
+		var compare = compareClothing + compareCamp + compareSafety;
+		res.send(results);
 	}
 };
 

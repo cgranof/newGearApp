@@ -62,3 +62,12 @@
 	padding-left: 40px;
 	padding-bottom: 20px;
 }
+
+#maps-image-container {
+	background-image: url("/images/iceland.jpg");
+	background-repeat: no-repeat;
+	height: 400px;
+	padding-top: 10px;
+	position: relative;
+	top: 250px;
+}
