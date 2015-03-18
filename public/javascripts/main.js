@@ -13,10 +13,10 @@ var renderDestination = function(trips) {
   // for (var i = 0; i < trips.length; i++) {
     $('#destination-list').append('<li>' +
       trips[0].location +
-      '<li>' + trips[0].activity + '</li>'+
-      '<li>' + trips[0].clothing + '</li>'+
-      '<li>' + trips[0].campgear + '</li>'+
-      '<li>' + trips[0].safety +
+      '<li>' + 'Activity type: ' + trips[0].activity + '</li>'+
+      '<li>' + 'Clothing to pack: ' + trips[0].clothing + '</li>'+
+      '<li>' + 'Camp gear to pack: ' + trips[0].campgear + '</li>'+
+      '<li>' + 'Safety gear to pack: ' + trips[0].safety +
       '</li>');
     console.log(trips[0].clothing);
   // }
