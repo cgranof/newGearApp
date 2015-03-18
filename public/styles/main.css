@@ -71,3 +71,11 @@
 	position: relative;
 	top: 250px;
 }
+
+#destination-image-container {
+	background-image: url("/images/gatesofarctic.jpg");
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 400px;
+	margin: auto;
+}
