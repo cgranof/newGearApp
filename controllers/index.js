@@ -18,10 +18,10 @@ var indexController = {
 			user:req.user
 
 		});
-		var alaska = gearModel[0].clothing;
-		var myClothing = req.user.clothing;
-		var compare = _.difference(alaska, myClothing);
-		console.log('from index: ' , compare);
+		// var alaska = gearModel[0].clothing;
+		// var myClothing = req.user.clothing;
+		// var compare = _.difference(alaska, myClothing);
+		// console.log('from index: ' , compare);
 	},
 	destination: function(req, res) {
 		res.render('destination', {

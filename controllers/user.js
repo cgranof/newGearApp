@@ -29,9 +29,9 @@ var userController = {
 	},
 	compare: function(req, res) {
 		var alaska = gearModel[0].clothing;
-		console.log('alaska ; ' , alaska);
+		// console.log('alaska ; ' , alaska);
 		var myClothing = req.user.clothing;
-		console.log('clothing:  ' , req.user.clothing);
+		// console.log('clothing:  ' , req.user.clothing);
 		// var compare = _.difference([1, 2, 3, 4], [2, 5, 7]); => 1, 3, 4
 		var compare = _.difference(alaska, myClothing);
 		console.log('test ', compare);
